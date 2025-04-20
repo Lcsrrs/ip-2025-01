@@ -23,6 +23,8 @@ func main() {
 		}
 	}
 
-	f.Printf("Total Aprovados: %d\nTotal Exame: %d\nTotal Reprovados: %d", aprovado, exame, reprovado)
+	f.Printf("Total Aprovados: %d\n", aprovado)
+	f.Printf("Total Exame: %d\n", exame)
+	f.Printf("Total Reprovados: %d\n", reprovado)
 
 }

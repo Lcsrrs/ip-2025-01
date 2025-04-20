@@ -6,22 +6,28 @@ import (
 )
 
 func main() {
-	var x float64
-	var iFat int
-	cosx := 1.0
+	var x, powX, cosx, iFat float64
+	cosx = 1.0
 
 	f.Scan(&x)
+	powX = x
 
 	for i := 1; i < 20; i++ {
-		//Determinando i fatorial:
+		//Determinando i fatorial e a potencia de x:
 		iFat = 1
+		powX = x
 		for j := 0; j < 2*i; j++ {
-			iFat *= (2*i - j)
+			iFat *= (2*float64(i) - float64(j))
+			if j == 0 {
+				continue
+			} else {
+				powX *= x
+			}
 		}
 		if i%2 == 0 {
-			cosx += m.Pow(x, 2*float64(i)) / float64(iFat)
+			cosx += powX / iFat
 		} else {
-			cosx -= m.Pow(x, 2*float64(i)) / float64(iFat)
+			cosx -= powX / iFat
 		}
 	}
 

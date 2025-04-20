@@ -1,16 +1,16 @@
 package main
 
-import (
-	f "fmt"
-	m "math"
-)
+import f "fmt"
 
 func main() {
-	var x, sin float64
+	var x, sin, i, cont, nx float64
 	f.Scan(&x)
+	cont = x / 0.1
+	nx = 0
 
-	for i := 0.0; i <= x; i += 0.1 {
-		sin = i - m.Pow(i, 3)/6 + m.Pow(i, 5)/120 - m.Pow(i, 7)/5040
-		f.Printf("%f %f\n", i, sin)
+	for i = 0; i < cont+1; i++ {
+		sin = nx - nx*nx*nx/6 + nx*nx*nx*nx*nx/120 - nx*nx*nx*nx*nx*nx*nx/5040
+		f.Printf("%.1f %.4f\n", nx, sin)
+		nx += 0.1
 	}
 }
