@@ -1,15 +1,27 @@
 package main
 
-import "fmt"
+import (
+	f "fmt"
+	m "math"
+)
 
 func main() {
-	arr := []interface{}{1, 2, "apple", true}
-	fmt.Println(arr)
+	var base8, base8init int
+	var base10, cont int
 
-	// however, now you need to use type assertion access elements
-	i := arr[0].(int)
-	fmt.Printf("i: %d, i type: %T\n", i, i)
+	f.Print("Digite o valor na base 8: ")
+	f.Scan(&base8)
+	base8init = base8
 
-	s := arr[2].(string)
-	fmt.Printf("b: %s, i type: %T\n", s, s)
+	for base8 > 0 {
+		if base8%10 == 9 || base8%10 == 8 {
+			f.Print("O número informado não está na base 8")
+			return
+		}
+		base10 += base8 % 10 * int(m.Pow(8, float64(cont)))
+		cont++
+		base8 /= 10
+	}
+
+	f.Printf("O número %d na base 10 é igual a %d", base8init, base10)
 }
