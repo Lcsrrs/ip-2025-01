@@ -1,0 +1,180 @@
+* {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background-image: url(./content/bg-desktop-light.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.nav-container {
+    background-color: purple;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-bar{
+    padding: 10px 10px;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;   
+}
+
+.nav-bar-section {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.nav-bar-items {
+    padding: 0px 5vw;
+    font-size: 20px;
+    color: rgba(255, 255, 255, 0.966);
+}
+
+.nav-bar-brand {
+    display: flex;
+    justify-content: flex-start;
+    width: 50px;
+    height: 50px;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+.nav-bar-items:hover{
+    color: rgb(0, 140, 255);
+}
+
+.page-text {
+    text-align: center;
+    padding: 10px 0 5px 0;
+    font-size: 50px;
+    color: rgb(153, 153, 153);
+}
+
+main {
+    padding: 0 6vw;
+}
+
+.main-content {
+    display: flex;
+    padding-bottom: 10px;
+}
+
+.main-image {
+    padding: 10px;
+    max-width: 80%;
+    height: auto;
+    min-width: 50%;
+    border-radius: 50px;
+}
+
+.buttons{
+    display: flex;
+    justify-content: space-between;
+}
+
+.button {
+    padding: 10px;
+    margin: 5px;
+    background-color: grey;
+    border-radius: 5px;
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+}
+
+
+.content-container-project{
+    display: flex;
+    padding: 20px;
+}
+
+.project {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 0 4%;
+}
+
+.main-content-project {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.project-title{
+    font-weight: bolder;
+}
+
+.project-link {
+    width: 5%;
+    height: auto;
+}
+
+.content-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0 4%;
+}
+
+.content-title {
+    width: 100%;
+    height: 10px;
+    font-weight: bolder;
+    font-size: 24px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+
+.content {
+    padding: 0 10px;
+}
+
+.content-figures{
+    display: flex;
+    justify-content: space-between;
+}
+
+.main-content-contact {
+    display: flex;
+    flex-direction: column;
+    padding: 0 25vw;
+}
+
+.field-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.text-input{
+    resize: both;
+    height: 10vh;
+}
+
+footer {
+    background-color: purple;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    color: white;
+    text-align: center;
+}
+
+.social {
+    width: 5%;
+    height: auto;
+
+}
+
